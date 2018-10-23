@@ -61,6 +61,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Resources\Graphics\PlaneReflection\AdamPlaneReflection\PlaneReflection\PlaneReflection.cs" />
+    <Compile Include="Assets\Scripts\Animation\Spin.cs" />
+    <Compile Include="Assets\Scripts\Animation\SpinPivot.cs" />
+    <Compile Include="Assets\Scripts\Effects\LightsaberTrail.cs" />
+    <Compile Include="Assets\Scripts\Effects\LightsaberTrailController.cs" />
+    <Compile Include="Assets\Scripts\Interaction\Lightsaber.cs" />
+    <Compile Include="Assets\Scripts\Movement\MoveRandomlyInCollider.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Scripts\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\Scripts\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\Scripts\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -163,16 +215,65 @@
     <Compile Include="Assets\Scripts\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
     <Compile Include="Assets\Scripts\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\Scripts\SteamVR\Scripts\SteamVR_Utils.cs" />
+    <Compile Include="Assets\Scripts\TangentSpaceVisualizer.cs" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_Fade.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_ClearAll.shader" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\Resources\Graphics\Shaders\Lightsaber.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\Resources\Graphics\PlaneReflection\AdamPlaneReflection\Shared\AdamPlaneReflectionsStandardSpecular.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\Resources\Graphics\PlaneReflection\AdamPlaneReflection\PlaneReflection\Convolve.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Scripts\JsonDotNet\link.xml" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\Resources\Graphics\PlaneReflection\AdamPlaneReflection\Shared\UnityStandardInput.cginc" />
+    <None Include="Assets\Resources\Graphics\PlaneReflection\AdamPlaneReflection\Shared\UnityStandardCore.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\Bloom.shader" />
     <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_AlphaOut.shader" />
     <None Include="Assets\Scripts\SteamVR\readme.txt" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
     <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_ColorOut.shader" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+    <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Resources\Graphics\PlaneReflection\ThreeDScans\Acknowledgement.txt" />
+    <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/mike/Documents/GitHub/BeatSaberClone/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -383,6 +484,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/mike/Documents/GitHub/BeatSaberClone/Assets/Scripts/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/mike/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
