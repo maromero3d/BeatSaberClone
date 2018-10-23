@@ -2,7 +2,7 @@
 
 Each time I do some work to this I will add a screenshots.
 
-![ScreenShot](https://raw.github.comcaffeine239/BeatSaberClone/tree/master/Screenshot.png)
+![ScreenShot](https://raw.githubusercontent.com/caffeine239/BeatSaberClone/master/Screenshot.png)
 
 Added https://github.com/keijiro/AdamPlaneReflection For platform reflection.
 
