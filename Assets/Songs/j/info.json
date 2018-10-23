@@ -1,0 +1,37 @@
+{
+  
+  "songName": "Blue (KNY Factory Remix)",
+  "songSubName": "Effeil 65",
+  "authorName": "Freeek",
+  "beatsPerMinute": 70,
+  "previewStartTime": 12,
+  "previewDuration": 10,
+  "coverImagePath": "cover.jpg",
+  "environmentName": "NiceEnvironment",
+  "difficultyLevels": [
+    {
+      "difficulty": "Expert",
+      "difficultyRank": 4,
+      "audioPath": "song.ogg",
+      "jsonPath": "Expert.json",
+      "offset": -715,
+      "oldOffset": -715
+    },
+    {
+      "difficulty": "Hard",
+      "difficultyRank": 4,
+      "audioPath": "song.ogg",
+      "jsonPath": "Hard.json",
+      "offset": 715,
+      "oldOffset": 715
+    },
+    {
+      "difficulty": "Normal",
+      "difficultyRank": 4,
+      "audioPath": "song.ogg",
+      "jsonPath": "Normal.json",
+      "offset": -715,
+      "oldOffset": -715
+    }
+  ]
+}
