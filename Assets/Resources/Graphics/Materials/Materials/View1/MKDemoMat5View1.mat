@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MKDemoMat5View1
-  m_Shader: {fileID: 4800000, guid: fac84b4723b809249a5c2677f01b7b86, type: 3}
+  m_Shader: {fileID: 4800000, guid: 3116dc5d2d459014eb4d26279676bac8, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -36,10 +36,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _EmissionLM: 0
+    - _InnerGlow: 0.5
     - _MKGlowOffSet: 0
     - _MKGlowPower: 4.9
     - _MKGlowTexStrength: 10
+    - _OuterGlow: 2
     m_Colors:
     - _Color: {r: 0, g: 0.12889366, b: 0.6320754, a: 1}
+    - _GlowColor: {r: 1, g: 0, b: 0, a: 1}
     - _MKGlowColor: {r: 0, g: 0.12941177, b: 0.63529414, a: 1}
     - _MKGlowTexColor: {r: 0, g: 0.12941177, b: 0.63529414, a: 1}

@@ -7,6 +7,7 @@ public class GameModule : MonoBehaviour {
     public GameObject Track;
     public GameObject MenuObject;
     public GameObject boss;
+    public GameObject wall;
     public AudioSource Audio;
     public AudioSource RhythmAudio;
     public AudioSource GuitarAudio;

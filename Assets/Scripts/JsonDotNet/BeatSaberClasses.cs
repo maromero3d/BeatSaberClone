@@ -10,7 +10,7 @@ public class BeatSaberNoteInfo
     public uint _noteJumpSpeed { get; set; }
     public uint _shuffle { get; set; }
     public double _shufflePeriod { get; set; }
-    public List<Events> _events { get; set; }
+    public List<BeatSaberEvents> _events { get; set; }
     public List<NoteData> _notes { get; set; }
     public List<ObstacleData> _obstacles { get; set; }
 }
@@ -48,15 +48,10 @@ public class Info
     public List<DifficultyLevels> difficultyLevels { get; set; }
 }
 
-public class Events
+public class BeatSaberEvents
 {
-    [JsonProperty("_time")]
     public float Time { get; set; }
-
-    [JsonProperty("_type")]
     public BeatSaberEventType Type { get; set; }
-
-    [JsonProperty("_value")]
     public int Value { get; set; }
 }
 

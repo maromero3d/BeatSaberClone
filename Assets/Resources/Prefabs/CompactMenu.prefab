@@ -383,7 +383,6 @@ MonoBehaviour:
   continueFunction: {fileID: 114787117557749376}
   restart: {fileID: 114347690311441232}
   _menu: {fileID: 114906187375842796}
-  FiveNoteGrid: {fileID: 0}
 --- !u!114 &114111253114827420
 MonoBehaviour:
   m_ObjectHideFlags: 1

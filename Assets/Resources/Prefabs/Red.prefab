@@ -37,6 +37,8 @@ GameObject:
   - component: {fileID: 4476328191258418}
   - component: {fileID: 33322964549164620}
   - component: {fileID: 23913350002754246}
+  - component: {fileID: 65503064281346324}
+  - component: {fileID: 54606722609488830}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -142,6 +144,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1879010071557760}
   m_Mesh: {fileID: 4300000, guid: 004847e9303b4e94a8826a6d2647e2cd, type: 3}
+--- !u!54 &54606722609488830
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879010071557760}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!65 &65503064281346324
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879010071557760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.998353, y: 1, z: 1}
+  m_Center: {x: -0.0008234978, y: 0, z: 0}
 --- !u!212 &212333360388676482
 SpriteRenderer:
   m_ObjectHideFlags: 1

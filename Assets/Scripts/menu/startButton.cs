@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class startButton : MonoBehaviour {
-    public GameObject GameModule;
+    public GameModule GameModule;
 
     // Use this for initialization
     void Start () {
@@ -13,8 +13,9 @@ public class startButton : MonoBehaviour {
 
     void startTrack()
     {
-        GameObject newNote = Instantiate(Resources.Load("Prefabs/TwelveNoteGrid") as GameObject);
-       // newNote.GetComponent<TwelveNoteGame>().beginGame(difficultyContent.diffcultyLevel);
+        GameObject newNote = Instantiate(Resources.Load("Prefabs/grid") as GameObject);
+        newNote.transform.position = new Vector3(0f, 2.6f, 32f);
+        newNote.GetComponent<TwelveNoteGame>().beginGame(difficultyContent.diffcultyLevel);
     }
 
     // Update is called once per frame

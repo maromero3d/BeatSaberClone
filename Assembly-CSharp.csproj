@@ -66,6 +66,11 @@
     <Compile Include="Assets\Scripts\Animation\SpinPivot.cs" />
     <Compile Include="Assets\Scripts\Effects\LightsaberTrail.cs" />
     <Compile Include="Assets\Scripts\Effects\LightsaberTrailController.cs" />
+    <Compile Include="Assets\Scripts\Game\controllerHit.cs" />
+    <Compile Include="Assets\Scripts\Game\Trash.cs" />
+    <Compile Include="Assets\Scripts\Game\TwelveNoteCube.cs" />
+    <Compile Include="Assets\Scripts\Game\TwelveNoteGame.cs" />
+    <Compile Include="Assets\Scripts\Game\wall.cs" />
     <Compile Include="Assets\Scripts\GameModule.cs" />
     <Compile Include="Assets\Scripts\Interaction\Lightsaber.cs" />
     <Compile Include="Assets\Scripts\JsonDotNet\BeatSaberClasses.cs" />
@@ -320,6 +325,7 @@
     <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_ColorOut.shader" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\Resources\Graphics\Materials\Shader\Render\MKGlowSelectiveRender.shader" />
+    <None Include="Assets\Resources\Graphics\Shaders\DeckingGlow.shader" />
     <None Include="Assets\Scripts\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\Resources\Graphics\PlaneReflection\ThreeDScans\Acknowledgement.txt" />
     <None Include="Assets\Resources\Graphics\Materials\Shader\Render\MKGlowCompositeInc.cginc" />
