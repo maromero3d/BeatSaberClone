@@ -2,6 +2,10 @@
 
 Each time I do some work to this I will add a screenshots.
 
+Added https://github.com/DavidArayan/EzySlice to slice.
+
+https://www.youtube.com/watch?v=1TeJ1xfTeao  //Shows cutting
+
 ![ScreenShot](https://raw.githubusercontent.com/caffeine239/BeatSaberClone/master/Screenshot.png)
 
 Added https://github.com/keijiro/AdamPlaneReflection For platform reflection.
