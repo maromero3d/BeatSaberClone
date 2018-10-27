@@ -66,6 +66,17 @@
     <Compile Include="Assets\Scripts\Animation\SpinPivot.cs" />
     <Compile Include="Assets\Scripts\Effects\LightsaberTrail.cs" />
     <Compile Include="Assets\Scripts\Effects\LightsaberTrailController.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\IntersectionResult.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\Intersector.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\Line.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\Plane.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\TextureRegion.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\Triangle.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\_sliceFramework\Triangulator.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\SlicedHull.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\sliceFollow.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\Slicer.cs" />
+    <Compile Include="Assets\Scripts\Game\_Slice\SlicerExtensions.cs" />
     <Compile Include="Assets\Scripts\Game\controllerHit.cs" />
     <Compile Include="Assets\Scripts\Game\Trash.cs" />
     <Compile Include="Assets\Scripts\Game\TwelveNoteCube.cs" />
@@ -77,7 +88,6 @@
     <Compile Include="Assets\Scripts\JsonDotNet\Enums.cs" />
     <Compile Include="Assets\Scripts\menu\ControllerEventSystem.cs" />
     <Compile Include="Assets\Scripts\menu\controllerMenu.cs" />
-    <Compile Include="Assets\Scripts\menu\controllerStart.cs" />
     <Compile Include="Assets\Scripts\menu\difficultyButton.cs" />
     <Compile Include="Assets\Scripts\menu\difficultyContent.cs" />
     <Compile Include="Assets\Scripts\menu\DragDrop.cs" />

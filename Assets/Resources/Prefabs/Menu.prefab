@@ -870,6 +870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SongObject: {fileID: 1758202120528968, guid: 9f3d1e3fc21148b44b5abc47760a7c1b, type: 2}
   LeftController: {fileID: 0}
+  loaded: 0
 --- !u!114 &114703468858692622
 MonoBehaviour:
   m_ObjectHideFlags: 1

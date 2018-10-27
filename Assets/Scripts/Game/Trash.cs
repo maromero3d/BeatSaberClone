@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trash : MonoBehaviour {
 
     public bool isFloatingText = false;
-    public float _time = 1;
+    public float _time = 0.3f;
     // Use this for initialization
     void Start()
     {

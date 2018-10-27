@@ -31,7 +31,11 @@ public class TwelveNoteGame : MonoBehaviour {
         game = GameObject.Find("GameModule").GetComponent<GameModule>();
         nextIndex = 0;
         file = filename;
+
         game.MenuObject.SetActive(false);
+        game.LeftBlade.SetActive(true);
+        game.RightBlade.SetActive(true);
+        
         SpawnObjects(difficultyContent.selectedTwelveNoteChart, file);
         game.Audio.GetComponent<AudioSource>().time = 0;
         playtrack = true;
@@ -151,6 +155,8 @@ public class TwelveNoteGame : MonoBehaviour {
     {
         playtrack = false;
         game.MenuObject.SetActive(true);
+        game.LeftBlade.SetActive(false);
+        game.RightBlade.SetActive(false);
         Destroy(gameObject);
     }
 
@@ -175,4 +181,6 @@ public class TwelveNoteGame : MonoBehaviour {
             game.Audio.PlayScheduled(AudioSettings.dspTime + delay);
         }
     }
+
+   
 }

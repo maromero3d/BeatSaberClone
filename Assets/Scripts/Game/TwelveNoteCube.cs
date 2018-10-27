@@ -30,7 +30,7 @@ public class TwelveNoteCube : MonoBehaviour {
             if (t.gameObject.name == "Box")
             {
                 hardScale = t.gameObject.transform.localScale / 2;
-                StartCoroutine(RotateMe(Vector3.forward * GetNoteRotation(note), 3f, t.gameObject));
+                StartCoroutine(RotateMe(Vector3.forward * GetNoteRotation(note), 2f, t.gameObject));
             }
         }
     }
@@ -91,11 +91,34 @@ public class TwelveNoteCube : MonoBehaviour {
 
         if (transform.position.z <= newPos.z && canStepFinal)
         {
+            addFlame();
             canStep = false;
             canStepTwo = true;
             canStepFinal = false;
         }
         
-        //transform.LookAt(new Vector3(Wall.transform.position.x, transform.position.y, Wall.transform.position.z));
+        transform.LookAt(new Vector3(game.wall.transform.position.x, transform.position.y, game.wall.transform.position.z));
+    }
+
+    void addFlame()
+    {
+        string type = "RedFire";
+        /*switch(note._type)
+        {
+            case Hand.blue:
+                type = "BlueFire";
+                break;
+            case Hand.red:
+                type = "RedFire";
+                break;
+            case Hand.Bomb:
+                type = "RedFire";
+                break;
+        }
+        GameObject _explosion = Instantiate(Resources.Load("Prefabs/" + type) as GameObject);
+        _explosion.transform.localScale = new Vector3(2f, 7f, 2f);
+        _explosion.transform.position = newPos;
+        _explosion.name = type;
+        _explosion.AddComponent<Trash>();*/
     }
 }

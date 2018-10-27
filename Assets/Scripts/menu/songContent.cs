@@ -53,7 +53,7 @@ public class songContent : MonoBehaviour
                 songTwelveNoteInfo.path = newDir;
                 songTwelveNoteInfo.audioClip = audioLoader.GetAudioClip();
                 GameObject Song = Instantiate(SongObject);
-                Song.transform.parent = gameObject.transform;
+                Song.transform.SetParent(gameObject.transform);
                 Song.transform.localScale = new Vector3(1, 1, 1);
                 Song.transform.localPosition = new Vector3(Song.transform.localPosition.x, Song.transform.localPosition.y, 0);
                 Song.name = TwlevelNoteIndex.ToString();
@@ -111,7 +111,7 @@ public class songContent : MonoBehaviour
         foreach (Transform t in ts)
         {
             Transform[] ts1 = t.transform.GetComponentsInChildren<Transform>(true);
-            foreach (Transform t1 in ts)
+            foreach (Transform t1 in ts1)
             {
                 if (t1.gameObject.name == "selected")
                 {
@@ -129,7 +129,7 @@ public class songContent : MonoBehaviour
         yield return www;
         tmp.sprite = Sprite.Create(www.texture, new Rect(0, 0, www.texture.width, www.texture.height), new Vector2(0, 0));
     }
-    bool loaded = false;
+    public bool loaded = false;
     void Update()
     {
         if (loaded)
